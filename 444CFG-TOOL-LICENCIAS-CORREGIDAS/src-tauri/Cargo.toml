@@ -1,0 +1,18 @@
+[package]
+name = "cfg444-tool"
+version = "1.0.0"
+description = "444CFG TOOL - FiveM Configuration Manager"
+authors = ["444"]
+edition = "2021"
+
+[build-dependencies]
+tauri-build = { version = "2", features = [] }
+
+[dependencies]
+tauri = { version = "2", features = [] }
+tauri-plugin-dialog = "2"
+tauri-plugin-opener = "2"
+serde = { version = "1", features = ["derive"] }
+serde_json = "1"
+anyhow = "1"
+engine = { path = "../engine" }
